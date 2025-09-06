@@ -1,0 +1,445 @@
+/* for page */
+body {
+	background: #000;
+	color: #666;
+	font-family: Tahoma, Arial, Helvetica, sans-serif;
+	font-size: 0.75em;
+	margin: 0 0 0;
+	padding: 0;
+}
+#topside {
+	position: absolute;
+	top: 1%;
+	left: 2%;
+	width: 96%;
+	height: 9%;
+}
+#bottomside {
+	font-size: 80%;
+	background: #000030;
+	text-align: center;
+	color: #9a9a9a;
+	position: absolute;
+	top: 94%;
+	left: 2%;
+	width: 96%;
+	height: 5%;
+	overflow: auto;
+}
+#leftside, #main, #rightside {
+	top: 13%;
+	height: 80%;
+	border: 1px white solid;
+	overflow: auto;
+}
+#leftside {
+	font-size: 0.9em;
+	background: #121212;
+	color: #a0a0a0;
+	position: absolute;
+	left: 2%;
+	width: 14%;
+}
+#main {
+	background: #121212;
+	color: #a0a0a0;
+	position: absolute;
+	left: 17%;
+	width: 80%;
+}
+
+/* #topside div, */
+#leftside>div, #rightside>div, #bottomside>div, #main>div {
+	margin: 3px;
+}
+
+/*imported from ver 1.x */
+
+table {
+	border-top: 1px solid red;
+	border-bottom: 1px solid red;
+	width: 100%; 
+}
+th {
+	background: #004;
+	color: #eee;
+	font-weight: bold;
+}
+td {
+	vertical-align: top;
+}
+.heading {
+	color: #ff9;
+	font-weight: bold;
+}
+.field {
+	color: #ddd;
+	text-decoration: underline;
+}
+h1 { clear: left;}
+div.rt.left {
+	float: left;
+	width: 60%;
+	height: 100px;
+	background: #000;
+}
+h2 {
+	color: #93F;
+	font-family: Verdana, Tahoma, Arial, Helvetica, sans-serif;
+	font-size: 1.10em;
+	margin: 0px;
+	padding-bottom: 3px;
+}
+h3 {
+	color: #08f;
+	display: inline;
+	font-family: Verdana, Tahoma, Arial, Helvetica, sans-serif;
+	font-size: 1.05em;
+}
+div.rt.new {
+	background: #333;
+}
+div.rt.news {
+	border: 3px #ff0 solid;
+	text-align: center;
+	margin: 0 auto;
+}
+.officer {
+	color: #0cf;
+}
+.offonly {
+	color: #f00;
+}
+.dev {
+	color: #e20;
+}
+.rtpopup {
+	position:absolute; 
+	visibility: hidden; 
+	border: 4px solid #0080ff; 
+	background-color: #eeee66; 
+	width: 300px; 
+	padding: 2px;
+	color: #000;
+	margin-left: -21%; /* used since main is positioned absolute. */
+	margin-top: -10%;
+}
+.rtpopup.moveleft {margin-left: -50%;} /* 30% more than .rtpopup.  look above */
+#hist td { 
+	vertical-align: bottom; 
+	border-bottom: 1px dashed #550;
+}
+#hist tr:last-child td {
+	border-bottom: 0px solid #000;
+}
+.btn, input[type="submit"] {
+	border-top: 1px solid #d30;
+	border-bottom: 1px solid #d3c;
+	border-left: 0px solid #000;
+	border-right: 0px solid #000;
+	color: #ffc;
+	background: #000;
+}
+.role {
+	font-weight: bold;
+	width: 100%;
+	border-bottom: 1px dotted #ffc;
+}
+form {border: 0; margin: 0; padding: 0;}
+
+/* calendar styles */
+#hist td.day {
+	vertical-align: text-top;
+	width: 10%;
+	height: 60px;
+	/*padding-bottom: 5px;*/
+}
+.date {
+	background: #232323;
+	color: #ffffdd;
+}
+#today { background: #004411;}
+.reset {color: #ff0;}
+.rtinst {
+	font-weight: bold;
+	background: #323232;
+	color: #ddd;
+	padding-left: 2px;
+	height: 2.40em;
+	vertical-align: bottom;
+}
+.onote {
+	font-style: italic;
+	color: #0080ff;
+}
+.rtpopup a:hover, .rtpopup a:focus {
+	color: #f00;
+	text-decoration: underline;
+}
+#hist img {vertical-align: bottom;}
+.statusicon, .addraid {
+	float: right;
+	vertical-align: text-top;
+}
+.addraid {
+	margin-right: 20px;
+}
+.timeline {background: #fff;}
+.dtnotice {color: #f00;}
+textarea, input[type="text"], select {
+	background: #000;
+	border: 1px dotted #ffc;
+	color: #ff0;
+}
+.ver {
+	position: absolute;
+	top: 97%;
+	left: 0;
+	width: 99%;
+	text-align: center;
+}
+/* Ver 2.0 timebox (for raid signups */
+#timebox {
+	float: right;
+	margin-top: 20px;
+	padding: 5px;
+	background-color: #333;
+	margin-right: 10px;
+}
+table {clear: both;}
+/* Ver 2.0 menu */
+#container, #container .rtmenu {
+	padding: 0;
+	margin: 0;
+}
+
+.rtmenu#charbox div {display: inline;}
+h1.rtmenu {
+	font-size: 110%; 
+}
+h1 {
+	color: #93F;
+	font-family: Verdana, Tahoma, Arial, Helvetica, sans-serif;
+	font-size: 1.25em;
+	margin: 0px;
+	padding-bottom: 3px;
+}
+.mainbox h1, h1.news {color: #66F;}
+div.newspost{
+	color: #9e9eff;
+	background: #050522;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.80em;
+	width: 100%;
+	text-align: right;
+	margin-top: 2px;
+	margin-bottom: 7px;
+}
+a {text-decoration: none;}
+a:link{color: #0bf;}
+a:visited {color: #f0f;}
+a:hover, a:focus, a:active {color: #ff9;}
+
+.instance {
+	font-weight: bold;
+	color: #ffa;
+}
+#menubar {background: #000;}
+pre { /* for the changelog */
+	font-size: 110%;
+}
+#tosbox { /* for TOS box */
+	padding: 2px;
+	margin: 0 auto 10px;
+	border: 1px solid #aaa;
+	width: 95%;
+	height: 360px;
+	overflow: auto;
+
+}
+tr:hover {background: #333;}
+/* *** for popup on characters   Version 2.0 *** */
+span > .charpop {
+	display: none;
+}
+span:hover > .charpop {
+	display: block;
+	position: absolute;
+}
+.charpop .chartitle {
+	margin: 0 -3px;
+	padding: 1px 3px 0px;
+	background: #333;
+	color: #ff0;
+	font-size: 120%;
+	text-align: right;
+	display: block;
+}
+.charpop .floatleft {
+	float: left;
+	padding-right: 3px;
+	
+}
+.charpop {
+	border: 1px solid #f00;
+	width: 200px;
+	margin-top: -3px;
+	padding-left: 3px;
+	padding-right: 3px;
+	background: #ffc;
+	color: #000;
+}
+.charpop .officer { color: #00f;}
+/* *** 'true forms' in RT 2.0 */
+#trueform label, .trueform input, .trueform select, .trueform textarea, #trueform .spaceright, #trueform .spaceleft {
+	display: block;
+	float: left;
+	width: 200px;
+	margin-bottom: 10px;
+}
+
+#trueform label, #trueform .spaceleft {
+	width: 170px;
+	text-align: right;
+	margin-right: 5px;
+}
+#trueform br {
+	clear: left;
+}
+
+tr:hover {background-color: #666 !important;}
+
+
+/* for rest of page 
+.heading {
+	color: #0000e0;
+	font-weight: bold;
+}
+.field {
+	color: #202020;
+	text-decoration: underline;
+}
+h1 {
+	color: #9933ff;
+	font-family: Verdana, Tahoma, Arial, Helvetica, sans-serif;
+	font-size: 1.20em;
+	margin: 0px;
+	padding-bottom: 3px;
+}
+h2 {
+	color: #3333FF;
+	font-family: Verdana, Tahoma, Arial, Helvetica, sans-serif;
+	font-size: 1.10em;
+	margin: 0px;
+	padding-bottom: 0px;
+}
+h3 {
+	color: #08f;
+	display: inline;
+	font-family: Verdana, Tahoma, Arial, Helvetica, sans-serif;
+	font-size: 1.05em;
+}
+
+#logo {
+	width: 100%;
+	height: 100%;
+	margin: auto auto;
+}
+#menubar {
+	background: #000;
+}
+a:link, a:visited, a:hover, a:active {
+	text-decoration: none;
+}
+/* -------------- RT specific formatting in tables ---- * /
+table {
+	border-bottom: 2px solid #8cf;
+	border-top: 2px solid #8cf;
+}
+th {
+	background: #8cf;
+	color: #200;
+}
+.officer {color: #03f;}
+.offonly {color: #900;}
+img {padding: 0 1px;}
+h1 {font-size: 125%;}
+h2 {font-size: 115%;}
+.rtpopup {
+/*	position: absolute; 
+	visibility: hidden; 
+* /
+	border: 4px solid #0080ff; 
+	background-color: #eeee66; 
+	width: 300px; 
+	padding: 0px;
+	color: #000;
+}
+.rtinst {
+	font-weight: bold;
+	background: #323232;
+	color: #ddd;
+	padding-left: 2px;
+	height: 2.40em;
+	vertical-align: bottom;
+}
+
+
+/* calendar styles * /
+#hist td.day {
+	vertical-align: top;
+	width: 10%;
+	height: 60px;
+}
+.date {
+	background: #cccccc;
+	color: #000000;
+	height: 25px;
+}
+#today { background: #00aa22;}
+.reset {color: #707000;}
+.rtinst {
+	font-weight: bold;
+	background: #323232;
+	color: #ddd;
+	padding-left: 2px;
+	height: 2.40em;
+	vertical-align: bottom;
+}
+.onote {
+	font-style: italic;
+	color: #0080ff;
+}
+.rtpopup a:hover, .rtpopup a:focus {
+	color: #f00;
+	text-decoration: underline;
+}
+#hist img {vertical-align: bottom;}
+.statusicon, .addraid {
+	margin: 0;
+	padding: 0;
+/*	float: right;* /
+	vertical-align: top;
+}
+.addraid {margin-right: 3px;}
+.timeline {background: #fff;}
+.dtnotice {color: #f00;}
+div.rt.news {
+	border: 3px #f00 solid;
+	text-align: center;
+	margin: 0 auto;
+}
+pre { /* for the changelog * /
+	font-size: 110%;
+}
+#container, #container .rtmenu {
+	padding: 0;
+	margin: 0;
+}
+
+.rtmenu#charbox div {display: inline;}
+h1.rtmenu {
+	font-size: 110%; 
+}
+ 
+*/

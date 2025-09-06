@@ -1,0 +1,22 @@
+#bottomside {
+	display: block;
+	position: static;
+}
+#topside, #bottomside, #main, #leftside {
+	position: static;
+}
+#main {
+	display: block;
+	height: auto;
+	width: 98%;
+}
+#leftside {
+	display: block;
+	float: none;
+	left: 2%;
+	width: 98%;
+	height: auto;
+}
+.rtmenu {display: inline;}
+#help {display: none;}
+#leftside #message {display: block;}

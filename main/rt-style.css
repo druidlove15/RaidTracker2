@@ -1,0 +1,277 @@
+/* for page */
+/* positioning page elements */
+body {
+	margin: 0 1% 0 1%;
+	padding: 0;
+}
+/* for styling individual elements*/
+body {
+	background: #eee;
+	color: #000;
+	font-family: Tahoma, Arial, Helvetica, sans-serif;
+	font-size: 0.75em;
+}
+#topside, #bottomside {
+	background: #88f;
+	color: #fff;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 75%;
+	text-align: center;
+}
+#topside {
+	margin: 1% 0%;
+	left: 2%;
+	width: 98%;
+	height: 8%;
+}
+#bottomside {
+	position: absolute;
+	top: 96%;
+	left: 1%;
+	width: 96%;
+	height: 3%;
+	overflow: auto;
+}
+#leftside, #main {
+	top: 10%;
+	height: 85%; 
+	border: 1px #222 solid;
+	overflow: auto;
+}
+#leftside {
+	float: left;
+	background: #cff;
+	color: #000;
+	position: absolute;
+	margin-left: 0%;
+	width: 14%;
+	overflow: auto;
+}
+#time {
+	float: right;
+	width: 20%;
+	border: 2px solid #cc3;
+	background: #ffb;
+	padding: 2px 3px;
+}
+#main {
+	position: absolute;
+	margin-left: 15%;
+	width: 80%;
+}
+
+/* #topside div, */
+#leftside>div, #rightside>div, #bottomside>div, #main>div {
+	margin: 3px;
+}
+/* for rest of page */
+.heading {
+	color: #0000e0;
+	font-weight: bold;
+}
+.field {
+	color: #202020;
+	text-decoration: underline;
+}
+h1 {
+	color: #9933ff;
+	font-family: Verdana, Tahoma, Arial, Helvetica, sans-serif;
+	font-size: 1.20em;
+	margin: 0px;
+	padding-bottom: 3px;
+}
+h2 {
+	color: #3333FF;
+	font-family: Verdana, Tahoma, Arial, Helvetica, sans-serif;
+	font-size: 1.10em;
+	margin: 0px;
+	padding-bottom: 0px;
+}
+h3 {
+	color: #08f;
+	display: inline;
+	font-family: Verdana, Tahoma, Arial, Helvetica, sans-serif;
+	font-size: 1.05em;
+}
+
+#logo {
+	width: 100%;
+	height: 100%;
+	margin: auto auto;
+}
+#menubar {
+	background: #000;
+}
+a:link, a:visited, a:hover, a:active {
+	text-decoration: none;
+}
+/* -------------- RT specific formatting in tables ---- */
+table {
+	border-bottom: 2px solid #8cf;
+	border-top: 2px solid #8cf;
+}
+th {
+	background: #8cf;
+	color: #200;
+}
+.officer {color: #03f;}
+.offonly {color: #900;}
+img {padding: 0 1px;}
+h1 {font-size: 125%;}
+h2 {font-size: 115%;}
+
+.rtpopup, .raidpopup {
+	position: absolute; 
+	display: none;
+/*	visibility: hidden;  */
+	border: 4px solid #0080ff; 
+	background-color: #eeee66; 
+	width: 300px; 
+	padding: 0px;
+	color: #000;
+/*	margin-left: -20%; /* used since main is positioned absolute. */
+/*	margin-top: -8%; */
+}
+.raidpopup.moveleft, .rtpopup.moveleft {margin-left: -30%;} /* 30% more than .rtpopup.  look above */
+.rtinst, .raidtitle {
+	font-weight: bold;
+	background: #323232;
+	color: #ddd;
+	padding-left: 2px;
+/*	height: 2.40em;*/
+	vertical-align: bottom;
+}
+.raidinst:hover .raidpopup, .raidinst:focus .raidpopup {display: block;}
+/* some default classes for formatting */
+.right {text-align: right;}
+.left {text-align: left;}
+.center {text-align: center;}
+.xsmall {width: 5%;}
+.small {width: 10%;}
+.medium {width: 20%;}
+.large {width: 25%;}
+.xlarge {width: 30%;}
+/* News box formatting */
+#newsdetails {
+	text-align: right;
+	font-size: 90%;
+	font-style: italic;
+	color: #202020;
+	margin-right: 10px;
+}
+/* *** 'true forms' in RT 2.0 */
+.trueform label, .trueform input, .trueform select, .trueform textarea, .trueform .spaceright, .trueform .spaceleft,
+#trueform label, #trueform input, #trueform select, #trueform textarea, #trueform .spaceright, #trueform .spaceleft {
+	display: block;
+	float: left;
+	margin-bottom: 3px;
+}
+.trueform label, .trueform .spaceleft ,
+#trueform label, #trueform .spaceleft {
+	width: 170px;
+	text-align: right;
+	margin-right: 5px;
+}
+.trueform br,
+#trueform br {
+	clear: left;
+	display: block;
+}
+.trueform .spaceright + * ,
+#trueform .spaceright + * {clear: left;}
+.trueform + * ,
+#trueform + * {clear: left;}
+/* calendar styles */
+#hist td.day {
+	vertical-align: top;
+	width: 10%;
+	height: 60px;
+}
+.date {
+	background: #cccccc;
+	color: #000000;
+	height: 25px;
+}
+#today { background: #00aa22;}
+.reset {color: #707000;}
+.rtinst {
+	font-weight: bold;
+	background: #323232;
+	color: #ddd;
+	padding-left: 2px;
+	height: 2.40em;
+	vertical-align: bottom;
+}
+.onote {
+	font-style: italic;
+	color: #0080ff;
+}
+.rtpopup a:hover, .rtpopup a:focus {
+	color: #f00;
+	text-decoration: underline;
+}
+.raidcal th {width: 14%;}
+#hist img {vertical-align: bottom;}
+.statusicon, .addraid {
+	margin: 0;
+	padding: 0;
+/*	float: right;*/
+	vertical-align: top;
+}
+.addraid {float: right;}
+.addraid {margin-right: 3px;}
+.timeline {background: #fff;}
+.dtnotice {color: #f00;}
+div.rt.news {
+	border: 3px #f00 solid;
+	text-align: center;
+	margin: 0 auto;
+}
+pre { /* for the changelog */
+	font-size: 110%;
+}
+#container, #container .rtmenu {
+	padding: 0;
+	margin: 0;
+}
+
+.rtmenu#charbox div {display: inline;}
+h1.rtmenu {
+	font-size: 110%; 
+}
+#tosbox { /* for TOS box */
+	margin: 5px;
+	border: 1px solid #000;
+}
+/* ********************** for popup on characters */
+span > .charpop {
+	display: none;
+}
+span:hover > .charpop {
+	display: block;
+	position: absolute;
+}
+.charpop .chartitle {
+	margin: 0 -3px;
+	padding: 1px 3px 0px;
+	background: #333;
+	color: #ff0;
+	font-size: 120%;
+	text-align: right;
+	display: block;
+}
+.charpop .floatleft {
+	float: left;
+	padding-right: 3px;
+	
+}
+.charpop {
+	border: 1px solid #f00;
+	width: 200px;
+	margin-top: -3px;
+	padding-left: 3px;
+	padding-right: 3px;
+	background: #ffc;
+	color: #000;
+}
+

@@ -1,0 +1,33 @@
+class,Dk,Death Knight
+class,Dr,Druid
+class,Hu,Hunter
+class,Ma,Mage
+class,Pa,Paladin
+class,Pr,Priest
+class,Ro,Rogue
+class,Sh,Shaman
+class,Wl,Warlock
+class,Wr,Warrior
+raid_instance,aq20,Ruins of Ahn'Qiraj/20man
+raid_instance,aq40,Temple of Ahn'Qiraj/40man
+raid_instance,bwl,Blackwing Lair
+raid_instance,mc,Molten Core
+raid_instance,ony,Onyxia's Lair
+raid_instance,zg,Zul'Gurub
+raid_instance,bt,Black Temple
+raid_instance,gruul,Gruul's Lair
+raid_instance,hyj,Battle for Mount Hyjal
+raid_instance,kara,Karazhan
+raid_instance,mag,Magtheridon's Lair
+raid_instance,sp,Sunwell Plateau
+raid_instance,ssc,Serpentshrine Cavern
+raid_instance,tk,Tempest Keep
+raid_instance,za,Zul'Aman
+raid_instance,an,Azjol-Nerub 
+raid_instance,coa,Chamber of Aspects
+raid_instance,eoe,The Eye of Eternity
+raid_instance,ic,Icecrown Citadel 
+raid_instance,naxx,Naxxramas
+raid_instance,u,Ulduar
+raid_instance,voa,Valut of Archavon
+raid_instance,toc,Trial of the Crusader

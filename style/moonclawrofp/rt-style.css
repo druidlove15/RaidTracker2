@@ -1,0 +1,976 @@
+/*  phpBB 3.0 Style Sheet
+    --------------------------------------------------------------
+	Style name:		subsilver2
+	Based on style:	subSilver (the default phpBB 2 style)
+	Original author:	subBlue ( http://www.subBlue.com/ )
+	Modified by:		psoTFX and the phpBB team ( http://www.phpbb.com )
+	
+	This is an alternative style for phpBB3 for those wishing to stay with
+	the familiar subSilver style of phpBB version 2.x
+	
+	Copyright 2006 phpBB Group ( http://www.phpbb.com/ )
+    --------------------------------------------------------------
+*/
+
+/* Layout
+ ------------ */
+* {
+	/* Reset browsers default margin, padding and font sizes */
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 100%;
+}
+
+body {
+	/* Text-Sizing with ems: http://www.clagnut.com/blog/348/ */
+	font-family: Arial, Helvetica, Verdana, "Lucida Grande", sans-serif;
+	color: #FFFFFF;
+	background-color: #000000;
+	font-size: 62.5%; /* This sets the default font size to be equivalent to 10px */
+	margin: 0;
+}
+tr:hover {background: #333;}
+table.raidcal tr:hover {background: inherit;}
+table.raidcal td:hover {background: #333;}
+td {vertical-align: bottom;}
+#wrapheader {
+	min-height: 120px;
+	height: auto !important;
+	height: 120px;
+/*	background-image: url('./images/background.gif');
+	background-repeat: repeat-x;*/
+/*	padding: 0 25px 15px 25px;*/
+	padding: 0;
+}
+
+#wrapcentre {
+	margin: 15px 25px 0 25px;
+}
+
+#wrapfooter {
+	text-align: center;
+	clear: both;
+}
+
+#wrapnav {
+	width: 100%;
+	margin: 0;
+	background-color: #ECECEC;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #A9B8C2;
+}
+
+#logodesc {
+	margin-bottom: 5px;
+	padding: 5px 25px;
+	background: none;
+}
+
+#menubar {
+	margin: 0 25px;
+}
+
+#datebar {
+	margin: 10px 25px 0 25px;
+}
+
+#findbar {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+.forumrules {
+	background-color: #202020;
+	border-width: 2px;
+	border-style: solid;
+	border-color: #101010;
+	padding: 4px;
+	font-weight: normal;
+	font-size: 1.1em;
+	font-family: Arial, Helvetica, Verdana, sans-serif, "Lucida Grande";
+}
+
+.forumrules h3 {
+	color: red;
+}
+
+.forumrules h3, .forumrules a b {
+	font-weight: normal;
+}
+
+#pageheader { }
+#pagecontent { }
+#pagefooter { }
+
+#poll { }
+#postrow { }
+#postdata { }
+
+#pagecontent .gensmall {
+	color:#707070;
+}
+
+/*  Text
+ --------------------- */
+h1 {
+	color: #FFFFFF;
+	font-family: "Lucida Grande", "Trebuchet MS", Verdana, sans-serif;
+	font-weight: bold;
+	font-size: 1.8em;
+	text-decoration: none;
+}
+
+h2 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 1.5em;
+	text-decoration: none;
+	line-height: 120%;
+}
+
+h3 {
+	font-size: 1.3em;
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+	line-height: 120%;
+}
+
+h4 {
+	margin: 0.5em 0px 0px 0px;
+	font-size: 1.1em;
+	font-weight: bold;
+	color: #FFCC33;
+}
+
+p {
+	font-size: 1.1em;
+}
+
+p.moderators {
+	margin: 0;
+	float: left;
+	color: #707070;
+	font-weight: bold;
+}
+
+.rtl p.moderators {
+	float: right;
+}
+
+p.linkmcp {
+	margin: 0;
+	float: right;
+	white-space: nowrap;
+}
+
+.rtl p.linkmcp {
+	float: left;
+}
+
+.breadcrumbs {
+	margin: 0;
+	float: left;
+	color: black;
+	font-weight: bold;
+	white-space: normal;
+	font-size: 1em;
+}
+
+p.breadcrumbs {
+	margin: 0;
+	float: left;
+	color: black;
+	font-weight: bold;
+	white-space: normal;
+	font-size: 1em;
+}
+
+.rtl p.breadcrumbs {
+	float: right;
+}
+
+p.datetime {
+	margin: 0;
+	float: right;
+	white-space: nowrap;
+	font-size: 1em;
+}
+
+.rtl p.datetime {
+	float: left;
+}
+
+p.searchbar {
+	padding: 2px 0;
+	white-space: nowrap;
+}
+
+div.searchbar {
+	margin: 0;
+	float: right;
+	color: #FFFFFF;
+	font-weight: bold;
+	white-space: normal;
+	font-size: 1em;
+}
+
+p.searchbarreg {
+	margin: 0;
+	float: right;
+	white-space: nowrap;
+}
+
+.rtl p.searchbarreg {
+	float: left;
+}
+
+p.forumdesc {
+	padding-bottom: 4px;
+}
+
+p.topicauthor {
+	margin: 1px 0;
+}
+
+p.topicdetails {
+	margin: 1px 0;
+}
+
+.postreported, .postreported a:visited, .postreported a:hover, .postreported a:link, .postreported a:active {
+	margin: 1px 0;
+	color: red;
+	font-weight:bold;
+}
+
+.postapprove, .postapprove a:visited, .postapprove a:hover, .postapprove a:link, .postapprove a:active {
+	color: green;
+	font-weight:bold;
+}
+
+.postapprove img, .postreported img {
+	vertical-align: bottom;
+}
+
+.postauthor {
+	color: #000000;
+	font-weight : bold;
+	font-size : 120%;
+}
+
+.postdetails {
+	color: #AAAAAA;
+}
+
+.postbody {
+	font-size: 1.3em;
+	line-height: 1.4em;
+	font-family: Arial, Helvetica, Verdana, "Trebuchet MS", "Lucida Grande", sans-serif;
+}
+
+.postbody li, ol, ul {
+	margin: 0 0 0 1.5em;
+}
+
+.rtl .postbody li, .rtl ol, .rtl ul {
+	margin: 0 1.5em 0 0;
+}
+
+.posthilit {
+	background-color: #007700;
+	color: white;
+	padding: 0 2px 0 2px;
+	font-weight: bold;
+}
+
+.nav {
+	margin: 0;
+	color: #707070;
+	font-weight: bold;
+}
+
+.pagination {
+	padding: 4px;
+	color: #707070;
+	font-size: 1em;
+	font-weight: bold;
+}
+
+.cattitle {
+
+}
+
+.gen {
+	margin: 1px 1px;
+	font-size: 1.2em;
+}
+
+.genmed {
+	margin: 1px 1px;
+	font-size: 1.1em;
+}
+
+.gensmall {
+	margin: 1px 1px;
+	font-size: 1em;
+}
+
+.copyright {
+	color: #999999;
+	font-weight: normal;
+	font-family: Verdana, Arial, Helvetica, sans-serif, "Lucida Grande";
+	letter-spacing: -1px;
+}
+
+a.copyright:link, a.copyright:visited, a.copyright:active {
+	color: #999999;
+}
+
+a.copyright:hover {
+	color: #FFFFFF;
+	text-decoration: underline;
+}
+
+.titles {
+	font-family:  "Trebuchet MS" , Arial ,  Helvetica , "Lucida Grande", sans-serif , Verdana;
+	font-weight: bold;
+	font-size: 1.4em;
+	text-decoration: none;
+	font-variant: small-caps;
+	line-height : 150%;
+}
+
+.error {
+	color: red;
+}
+
+
+/* Tables
+ ------------ */
+th {
+	color: #FFA34F;
+	font-size: 1.1em;
+	font-weight: bold;
+	background-color: #000000;
+	background-image: url('./images/cellpic3.gif');
+	white-space: nowrap;
+	padding-left: 6px;
+	padding-right: 6px;
+	color: #FFCC33;
+	height:25px;
+}
+
+td {
+	padding: 6px 3px 3px 6px;
+}
+td.profile {
+	padding: 4px;
+}
+
+.tablebg {
+	background-color: transparent;
+		border: 2px solid #202020;
+}
+
+.catdiv {
+	height: 28px;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	background: #202020 url('./images/cellpic3.gif') repeat-x scroll top left;
+}
+.rtl .catdiv {
+	background: #202020 url('./images/cellpic3.gif') repeat-x scroll top right;
+}
+
+.cat {
+	height: 28px;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	background-color: #202020;
+	background-image: url('./images/cellpic3.gif');
+	text-indent: 4px;
+}
+
+.row1 {
+	background-color: #202020;
+	padding: 4px;
+}
+
+.row1b {
+	background-color: #202020;
+	padding: 7px 4px 6px 4px;
+}
+
+.row2 {
+	background-color: #353535;
+	padding: 4px;
+}
+
+.row3 {
+	background-color: #454545;
+	padding: 4px;
+}
+
+.spacer {
+	background-color: #555555;
+}
+
+hr {
+	height: 1px;
+	border-width: 0;
+	background-color: #303030;
+	color: #D1D7DC;
+}
+
+.legend {
+	text-align:center;
+	margin: 0 auto;
+}
+
+#colorpalette td {
+	padding: 1px;
+}
+
+/* Links
+ ------------ */
+a:link {
+	color: #006699;
+	text-decoration: none;
+}
+
+a:active,
+a:visited {
+	color: #006699;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #006699;
+	text-decoration: underline;
+}
+
+th a,
+th a:visited {
+	color: #FFCC33 !important;
+	text-decoration: none;
+}
+
+th a:hover {
+	text-decoration: underline;
+}
+
+
+/* Form Elements
+ ------------ */
+ 
+.cat form {
+	margin: 6px 0px 4px 0px;
+}
+
+form {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+input {
+	color: #FFFFFF;
+	font-family: "Lucida Grande", Verdana, Helvetica, sans-serif;
+	font-size: 1.1em;
+	font-weight: normal;
+	padding: 1px;
+	border: 1px solid #555555;
+	background-color: #000000;
+}
+
+input[type=hidden] { /* to keep Fx 3.0 happy */
+	display: none;
+	border: none;
+}
+textarea {
+	background-color: #000000;
+	color: #FFFFFF;
+	font-family: "Lucida Grande", Verdana, Helvetica, Arial, sans-serif;
+	font-size: 1.3em; 
+	line-height: 1.4em;
+	font-weight: normal;
+	border: 1px solid #555555;
+	padding: 2px;
+}
+
+select {
+	color: #FFFFFF;
+	background-color: #000000;
+	font-family: "Lucida Grande", Verdana, Helvetica, sans-serif;
+	font-size: 1.1em;
+	font-weight: normal;
+	border: 1px solid #A9B8C2;
+	padding: 1px;
+}
+
+option {
+	padding: 0 1em 0 0;
+}
+
+option.disabled-option {
+	color: graytext;
+}
+
+.rtl option {
+	padding: 0 0 0 1em;
+}
+
+input.radio {
+	border: none;
+	background-color: transparent;
+}
+
+.post {
+	background-color: #000000;
+	border-style: solid;
+	border-width: 1px;
+}
+
+.btnbbcode {
+	color: #FFFFFF;
+	font-weight: normal;
+	font-size: 1.1em;
+	font-family: "Lucida Grande", Verdana, Helvetica, sans-serif;
+	background-color: #000000;
+	border: 1px solid #555555;
+}
+
+.btnmain {
+	font-weight: bold;
+	background-color: #000000;
+	border: 1px solid #A9B8C2;
+	cursor: pointer;
+	padding: 1px 5px;
+	font-size: 1.1em;
+}
+
+.btnlite {
+	font-weight: normal;
+	background-color: #000000;
+	border: 1px solid #A9B8C2;
+	cursor: pointer;
+	padding: 1px 5px;
+	font-size: 1.1em;
+}
+
+.btnfile {
+	font-weight: normal;
+	background-color: #000000;
+	border: 1px solid #A9B8C2;
+	padding: 1px 5px;
+	font-size: 1.1em;
+}
+
+.helpline {
+	background-color: #000000;
+	border-style: none;
+}
+
+.cat input.btnmain, .cat input.btnlite, #pagecontent .cat input.btnmain, #pagecontent .cat input.btnlite {
+	margin: 5px 0 0 0;
+}
+
+#pagecontent .cat .btnmain, #pagecontent .cat .btnlite, #pagecontent .cat form input.btnlite  {
+	margin: 0;
+}
+
+/* BBCode
+ ------------ */
+.quotetitle, .attachtitle {
+	margin: 10px 5px 0 5px;
+	padding: 4px;
+	border-width: 1px 1px 0 1px;
+	border-style: solid;
+	border-color: #666666;
+	color: #333333;
+	background-color: #0A0A0A;
+	font-size: 0.85em;
+	font-weight: bold;
+}
+
+.quotetitle .quotetitle {
+	font-size: 1em;
+}
+
+.quotecontent, .attachcontent {
+	margin: 0 5px 10px 5px;
+	padding: 0 5px 5px 5px;
+	border-color: #555555;
+	border-width: 0 1px 1px 1px;
+	border-style: solid;
+	font-weight: normal;
+	font-size: 1em;
+	line-height: 1.2em;
+	font-family: Verdana, Arial, Helvetica, "Lucida Grande", "Trebuchet MS", sans-serif;
+	background-color: #0A0A0A;
+	color: #999999;
+}
+
+.attachcontent {
+	font-size: 0.85em;
+}
+
+.codetitle {
+	margin: 10px 5px 0 5px;
+	padding: 2px 4px;
+	border-width: 1px 1px 0 1px;
+	border-style: solid;
+	border-color: #555555;
+	color: #999999;
+	background-color: #000000;
+	font-family: "Lucida Grande", Verdana, Helvetica, Arial, sans-serif;
+	font-size: 0.8em;
+}
+
+.codecontent {
+	direction: ltr;
+	margin: 0 5px 10px 5px;
+	padding: 0 5px 5px 5px;
+	border-color: #666666;
+	border-width: 0 1px 1px 1px;
+	border-style: solid;
+	font-weight: normal;
+	color: #006600;
+	font-size: 0.85em;
+	font-family: Monaco, 'Courier New', monospace;
+	background-color: #000000;
+}
+
+.syntaxbg {
+	color: #FFFFFF;
+}
+
+.syntaxcomment {
+	color: #FF8000;
+}
+
+.syntaxdefault {
+	color: #0000BB;
+}
+
+.syntaxhtml {
+	color: #000000;
+}
+
+.syntaxkeyword {
+	color: #007700;
+}
+
+.syntaxstring {
+	color: #DD0000;
+}
+
+
+/* Private messages
+ ------------------ */
+.pm_marked_colour, .pm_marked_colour  img {
+	background-color: #FFCC33;
+}
+
+.pm_replied_colour, .pm_replied_colour img {
+	background-color: #A9B8C2;
+}
+
+.pm_friend_colour, .pm_friend_colour img {
+	background-color: #007700;
+}
+
+.pm_foe_colour, .pm_foe_colour img {
+	background-color: #DD0000;
+}
+
+
+/* Misc
+ ------------ */
+img {
+	border: none;
+}
+
+.sep {
+	color: black;
+	background-color: #FFA34F;
+}
+
+table.colortable td {
+	padding: 0;
+}
+
+pre {
+	font-size: 1.1em;
+	font-family: Monaco, 'Courier New', monospace;
+}
+
+.nowrap {
+	white-space: nowrap;
+}
+
+.username-coloured {
+	font-weight: normal;
+	font-size: 1.1em;
+}
+
+/* for page */
+/* positioning page elements */
+#topside {
+	height: auto !important;
+	padding: 0;
+}
+#helpbox {
+	float: right;
+	width: 35%;
+}
+#bottomside {
+/*	position: absolute;
+	top: 96%;
+	left: 1%;
+	width: 96%;
+	height: 3%;
+	overflow: auto;
+*/
+	background: #282800;
+	color: #fff;
+}
+#time { 
+	margin-top: 10px;
+	margin-right: 10px;
+	float: right;
+	width: 20%;
+	border: 1px solid #336600;
+	background: #333300;
+	padding: 2px 3px;
+}
+#menubar {
+	background: #000;
+	border-top: 1px solid #666600;
+	border-bottom: 1px solid #666600;
+}
+
+/* color styles for page in general */
+/* -------------- RT specific formatting in tables ---- */
+
+
+/* for rest of page */
+.heading {
+	color: #993333;
+	font-weight: bold;
+}
+.field {
+	color: #e0e0e0;
+	text-decoration: underline;
+}
+
+#logo {
+	float: right;
+	/*width: 100%;*/
+	height: 100%;
+	/*margin: auto 0 0 auto;*/
+}
+/* #menubar {
+	background: #000;
+} */
+
+.officer {color: #03f;}
+.offonly {color: #900;}
+img {padding: 0 1px;}
+
+.rtpopup, .raidpopup {
+	position: absolute; 
+/*	display: none;*/
+	border: 3px dashed #ff9900; 
+	background-color: #eeee66; 
+	width: 300px; 
+	padding: 0px;
+	color: #000;
+}
+.rtinst, .raidtitle {
+	font-weight: bold;
+	background: #323232;
+	color: #ddd;
+	padding-left: 2px;
+/*	height: 2.40em;*/
+	vertical-align: bottom;
+}
+/*   .raidinst:hover .raidpopup, .raidinst:focus .raidpopup {display: block;}
+/* some default classes for formatting */
+.right {text-align: right;}
+.left {text-align: left;}
+.center {text-align: center;}
+.xsmall {width: 5%;}
+.small {width: 10%;}
+.medium {width: 20%;}
+.large {width: 25%;}
+.xlarge {width: 30%;}
+
+/* News box formatting */
+.news {
+	background-color: #202020;
+	border-width: 2px;
+	border-style: solid;
+	border-color: #101010;
+	padding: 4px;
+	font-weight: normal;
+	font-size: 1.1em;
+	font-family: Arial, Helvetica, Verdana, sans-serif, "Lucida Grande";
+}
+
+.news h1, .forumrules h3 {
+	color: red;
+}
+
+#newsdetails a b, .forumrules h3, .forumrules a b {
+	font-weight: normal;
+}
+/*
+/* *** 'true forms' in RT 2.0 */
+.trueform label, .trueform input, .trueform select, .trueform textarea, .trueform .spaceright, .trueform .spaceleft,
+#trueform label, #trueform input, #trueform select, #trueform textarea, #trueform .spaceright, #trueform .spaceleft {
+	display: block;
+	float: left;
+	margin-bottom: 3px;
+}
+.trueform label, .trueform .spaceleft ,
+#trueform label, #trueform .spaceleft {
+	width: 170px;
+	text-align: right;
+	margin-right: 5px;
+}
+.trueform br,
+#trueform br {
+	clear: left;
+	display: block;
+}
+.trueform .spaceright + * ,
+#trueform .spaceright + * {clear: left;}
+.trueform + * ,
+#trueform + * {clear: left;}
+/* calendar styles */
+.raidcal td, #hist td.day {
+	vertical-align: top;
+	width: 10%;
+	height: 60px;
+}
+.date {
+	background: #cccc66;
+	color: #121212;
+	height: 25px;
+}
+#today {
+	background: #ffff00;
+	color: #000000;
+	font-weight: bold;
+}
+input[type="submit"] {
+	font-weight: bold;
+	background-color: #000000;
+	color: #fff;
+	border: 1px solid #A9B8C2;
+	cursor: pointer;
+	padding: 1px 5px;
+	font-size: 1.1em;
+}
+input[value="+"] {
+	font-weight: normal;
+	background-color: #000000;
+	border: 1px solid #A9B8C2;
+	cursor: pointer;
+	padding: 1px 5px;
+	font-size: 1.1em;
+}
+
+.reset {color: #707000;}
+.rtinst {
+	font-weight: bold;
+	background: #323232;
+	color: #ddd;
+	padding-left: 2px;
+	height: 2.40em;
+	vertical-align: bottom;
+}
+.onote {
+	font-style: italic;
+	color: #0080ff;
+}
+.rtpopup a:hover, .rtpopup a:focus {
+	color: #f00;
+	text-decoration: underline;
+}
+#hist img {vertical-align: bottom;}
+.statusicon, .addraid {
+	margin: 0;
+	padding: 0;
+/*	float: right;*/
+	vertical-align: top;
+}
+.addraid {float: right;}
+.addraid {margin-right: 3px;}
+.timeline {background: #fff;}
+.dtnotice {color: #f00;}
+/*div.rt.news {
+	border: 3px #f00 solid;
+	text-align: center;
+	margin: 0 auto;
+}
+*/
+pre { /* for the changelog */
+	font-size: 110%;
+}
+#rtmenu { text-align: right;}
+#container, #container .rtmenu {
+	display: inline;
+	padding: 0;
+	margin: 0;
+}
+
+.rtmenu#charbox div {display: inline;}
+h1.rtmenu#head {display: none;}
+#charbox {float: left;}
+.clear {clear: both;}
+
+#tosbox { /* for TOS box */
+	margin: 5px;
+	border: 1px solid #000;
+}
+/* ********************** for popup on characters */
+span > .charpop {
+	display: none;
+}
+span:hover > .charpop {
+	display: block;
+	position: absolute;
+}
+.charpop .chartitle {
+	margin: 0 -3px;
+	padding: 1px 3px 0px;
+	background: #333;
+	color: #ff0;
+	font-size: 120%;
+	text-align: right;
+	display: block;
+}
+.charpop .floatleft {
+	float: left;
+	padding-right: 3px;
+	
+}
+.charpop {
+	border: 1px solid #f00;
+	width: 200px;
+	margin-top: -3px;
+	padding-left: 3px;
+	padding-right: 3px;
+	background: #ffc;
+	color: #000;
+}
+
