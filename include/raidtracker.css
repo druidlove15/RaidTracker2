@@ -1,0 +1,27 @@
+/* Critical styles needed for RT */
+img {
+	display: inline; 
+	border: 0;
+}
+td, tr { 
+	margin: 0; 
+	padding: 0;
+}
+th, td {vertical-align: top;}
+table {width: 100%;}
+#hist .addraid {
+	float: right;
+	margin-right: 3px;
+}
+#hist .statusicon {float: right;}
+.rtpopup {
+	position: absolute; 
+	visibility: hidden; 
+}
+.raidcal th {width: 14%;}  /* for raid calendar */
+.raidpopup.moveleft {margin-left: -20%;} /* moves popups over 30% */
+.raidpopup {display: none;}
+.raidinst:hover .raidpopup {display: block;}
+/*
+
+*/
